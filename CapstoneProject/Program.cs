@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinchAPI;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CapstoneProject
 {
@@ -136,6 +137,7 @@ namespace CapstoneProject
                 Console.WriteLine($"Everyone then knew the legend of {userName} the {userSpecies} who used their {magicType} to defeat the sorcerer.");
                 Console.WriteLine($"You, your {companion}, your friend {ally} will be remembered forever as the protectors of your kingdom.");
                 DisplayWin(edi);
+                DisplayClosingScreen(edi);
             }
             else if (powerLevel < 90)
             {
@@ -318,6 +320,7 @@ namespace CapstoneProject
             Console.WriteLine("\tPress any key to exit, have a nice day.");
             Console.ReadKey();
             edi.disConnect();
+            Environment.Exit(0);
         }
 
         static string DisplayGetCompanion(string userName, string userSpecies, string magicType, int powerLevel, string magicSource)
