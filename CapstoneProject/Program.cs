@@ -14,6 +14,15 @@ namespace CapstoneProject
 
         static void Main(string[] args)
         {
+            //************************************
+            //Title: Final Capstone Project
+            //Application Type: Console App
+            //Description: Text Based Adventure Game
+            //Author: Christos Piliafas
+            //Date Created: December 1st, 2018
+            //Last Modified: December 6th, 2018
+            //************************************
+            
             //
             // list variables here
             //
